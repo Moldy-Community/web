@@ -4,8 +4,8 @@ The moldy landing page
 
 # Authors
 
-1. @junix7 [here](https://linktr.ee/junix)
-2. @TeoDev1611 [here](https://github.com/TeoDev1611)
+1. @junix7 [here](https://linktr.ee/junix) Web Developer
+2. @TeoDev1611 [here](https://github.com/TeoDev1611) CLI and Documentation developer
 
 ## 🧐 Contribute
 
