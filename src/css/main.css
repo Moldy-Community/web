@@ -1,0 +1,59 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap');
+body{
+	font-family: 'Fira Sans', sans-serif;
+}
+nav,header{
+	background: #F8F9FA;
+}
+.contenedor{
+	width: 50%;
+	padding-top:50px;
+}
+.code{
+	background: #FBF7EC;
+	padding: 15px;
+}
+.margen{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+footer{
+	background: #A2A7BD;
+	padding: 35px;
+	padding-bottom: 0;
+
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+.fab{
+	font-size: 2em;
+	color: lightgray;
+	padding: 5px;
+}
+.fab:hover{
+	color: white;
+}
+h3{
+	text-align:center;
+}
+.imgban{
+	width: 50%;
+	height: 50%;
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px){
+	.contenedor{
+		width: 100%;
+	}
+	footer{
+		font-size: 0.8rem;
+	}
+	.imgban{
+		width: 100%;
+		height: 100%;
+	}
+}
