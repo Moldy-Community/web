@@ -1,6 +1,21 @@
-# The Official Moldy Web
+<div align="center">
+  <p>
+    <img width="100" src="https://avatars.githubusercontent.com/u/80047393?s=200&v=4">
+  </p>
+  <h1>Moldy The best project starter of the world</h1>
+</div>
 
-The moldy landing page
+<div align="center">
+
+![GithubTestBadge](https://img.shields.io/github/workflow/status/Moldy-Community/CLI/Go?label=Tests&logo=github)
+![Last Commit](https://img.shields.io/github/last-commit/Moldy-Community/CLI)
+![DiscordBadge](https://img.shields.io/discord/842085043777831012?logo=discord&logoColor=white)
+![CLI STARS](https://img.shields.io/github/stars/Moldy-Community/CLI?style=social)
+
+</div>
+
+You don't know how to start your project ... you want to help other people know your tool or language. Use Moldy! the best helper to start your project
+<br>
 
 ## 🧐 Contribute
 
