@@ -13,6 +13,8 @@ nav,header{
 .code{
 	background: #FBF7EC;
 	padding: 15px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
 }
 .margen{
 	margin-top: 50px;
