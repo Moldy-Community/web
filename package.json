@@ -1,5 +1,26 @@
 {
-  "dependencies": {
-    "liveserver": "^0.1.20"
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Moldy The best project starter of the world",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moldy-Community/web.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Moldy-Community/web/issues"
+  },
+  "homepage": "https://github.com/Moldy-Community/web#readme",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.23.3",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.1.0"
   }
 }
