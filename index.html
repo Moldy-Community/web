@@ -8,47 +8,54 @@
 
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!--main css-->
     <link rel="stylesheet" type="text/css" href="src/css/main.css">
     <!--animate css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--fontawesome-->
-    <script src="https://kit.fontawesome.com/12e6288dad.js" crossorigin="anonymous"></script>
-
-
+    <scrip src="https://kit.fontawesome.com/12e6288dad.js" crossorigin="anonymous"></scrip>
 
     <title>Moldy</title>
   </head>
-  <body>
+  <body id="body" class="light-mode">
     <!--NAVIGATION-->
    <nav class="container-fluid">
        <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+        <div class="container-fluid position-relative">
            <a class="navbar-brand pe-4" href="#">
             <img src="src/img/logo-light.svg" alt="logo Moldy" width="100" height="100" class="d-inline-block align-text-top">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon current-color"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav position-relative">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#about">About</a>
+                <a class="nav-link current-color active" aria-current="page" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#install">Install</a>
+                <a class="nav-link current-color" href="#install">Install</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contribute">Contribute</a>
+                <a class="nav-link current-color" href="#contribute">Contribute</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#community">Community</a>
+                <a class="nav-link current-color" href="#community">Community</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link current-color" href="#">Blog</a>
               </li>
-              <a href="https://discord.gg/2uwzhmJdfw" class="btn btn-primary ms-4">Discord</a>
+              <!-- Dark Mode -->
+              <li id="toggleDarkTheme" class="nav-item">
+                <a class="icon-theme btn d-block text-dark mb-sm-2 mb-lg-0 mx-lg-2" href="#">
+                  <svg class="current-color" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://discord.gg/2uwzhmJdfw" class="d-block btn btn-primary">Discord</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -211,8 +218,8 @@
    
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-  
+    <script src="./src/scripts/scripts.js"></script>
   </body>
 </html>
