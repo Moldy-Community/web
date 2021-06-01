@@ -4,6 +4,7 @@ const body = document.getElementById("body")
 const loSt = window.localStorage
 const page = "moldy-dark-mode"
 const menuIcon = document.querySelector("#navbar-menu-default")
+const codeElement = document.querySelectorAll(".code")
 
 darkModeTrigger.addEventListener("click", () => {
   if (body.classList.contains("light-mode")) {
@@ -11,11 +12,19 @@ darkModeTrigger.addEventListener("click", () => {
     body.classList.add("dark-mode")
     loSt.setItem(page, JSON.stringify({ darkMode: true }))
     menuIcon.id = "navbar-menu-darkmode"
+
+    codeElement.forEach((element) => {
+      element.id = "code-dark"
+    })
   } else {
     body.classList.remove("dark-mode")
     body.classList.add("light-mode")
     loSt.setItem(page, JSON.stringify({ darkMode: false }))
     menuIcon.id = "navbar-menu-default"
+
+    codeElement.forEach((element) => {
+      element.id = ""
+    })
   }
 })
 window.addEventListener("DOMContentLoaded", () => {
@@ -24,10 +33,17 @@ window.addEventListener("DOMContentLoaded", () => {
     body.classList.remove("light-mode")
     menuIcon.id = "navbar-menu-darkmode"
     body.classList.add("dark-mode")
+    codeElement.forEach((element) => {
+      element.id = "code-dark"
+    })
   } else {
     body.classList.remove("dark-mode")
     body.classList.add("light-mode")
     menuIcon.id = "navbar-menu-default"
+
+    codeElement.forEach((element) => {
+      element.id = ""
+    })
   }
 })
 

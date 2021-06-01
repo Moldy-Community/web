@@ -32,10 +32,15 @@ body,
 }
 .code {
   position: relative; /* Para posicionar el pseudoelemento */
-  background: #fbf7ec;
   padding: 15px;
   border-radius: 10px 0 10px 10px;
+  background: #fbf7ec;
 }
+
+#code-dark {
+  background: #00031b;
+}
+
 .code::before {
   --textContent: "Copiar";
   content: var(--textContent);
