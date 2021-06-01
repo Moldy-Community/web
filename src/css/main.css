@@ -30,8 +30,24 @@ body,
 	padding-top:50px;
 }
 .code{
+	position: relative; /* Para posicionar el pseudoelemento */
 	background: #FBF7EC;
 	padding: 15px;
+}
+.code::before {
+	--textContent: 'Copiar';
+	content: var(--textContent);
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: .25em .5em;
+	font-size: 80%;
+	border: 1px solid;
+	cursor: pointer;
+}
+.code.copied::before {
+	--textContent: 'Copiado';
+	color: green;
 }
 .margen{
 	margin-top: 50px;
