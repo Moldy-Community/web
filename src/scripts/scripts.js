@@ -1,3 +1,4 @@
+// Dark Mode
 const darkModeTrigger = document.getElementById('toggleDarkTheme')
 const body = document.getElementById('body')
 const loSt = window.localStorage
@@ -23,4 +24,38 @@ window.addEventListener('DOMContentLoaded', () => {
     body.classList.remove('dark-mode')
     body.classList.add('light-mode')
   }
+})
+
+// Copy Commands
+const copyCommandsElement = document.getElementById('copy-commands')
+
+const copyCommand = (target) => {
+  const input = document.createElement('INPUT')
+
+  // Se le pasa como "value" al input el texto del elemento que se hizo click
+  input.setAttribute('value', target.textContent)
+  copyCommandsElement.appendChild(input)
+
+  // Se selecciona el texto del input (solo funciona en inputs o textarea)
+  input.select()
+
+  // Se copia
+  document.execCommand('copy')
+  // Se remueve del DOM el input
+  copyCommandsElement.removeChild(input)
+}
+
+const showMessageCopied = (target) => {
+  target.classList.add('copied')
+  setTimeout(() => {
+    target.classList.remove('copied')
+  }, 1500)
+}
+
+copyCommandsElement.addEventListener('click', (e) => {
+  // Si clickea cualquier cosa que no sea el párrafo con la clase "copy" retorna y no ejecuta la función
+  if (!e.target.classList.contains('code')) return
+  copyCommand(e.target)
+  // Cambia el color a verde del botón de copiar y pasado un tiempo vuelve a negro y el texto "Copiar"
+  showMessageCopied(e.target)
 })
