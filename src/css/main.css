@@ -34,6 +34,7 @@ body,
   position: relative; /* Para posicionar el pseudoelemento */
   background: #fbf7ec;
   padding: 15px;
+  border-radius: 10px 0 10px 10px;
 }
 .code::before {
   --textContent: "Copiar";
