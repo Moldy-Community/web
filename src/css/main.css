@@ -112,3 +112,15 @@ h3 {
 #nav-link {
   color: var(--link-color);
 }
+
+#navbar-menu-default {
+  background-image: url(../img/menu/menu-default.svg);
+}
+
+#navbar-menu-darkmode {
+  background-image: url(../img/menu/menu-light.svg);
+}
+
+#navbar-toggler {
+  border: none;
+}
