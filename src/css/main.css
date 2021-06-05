@@ -9,13 +9,16 @@
   --light-grey: #a4a4bc;
 }
 .dark-mode {
-  --text-color: var(--white);
-  --bg-color: var(--dark-blue);
-  --link-color: rgba(255, 255, 255, 0.9);
+	--text-color: var(--white);
+	--bg-color: var(--dark-blue);
+
+	--bg-code: rgb(20, 27, 77);
 }
 .light-mode {
-  --text-color: var(--dark-blue);
-  --bg-color: var(var(--light-grey));
+	--text-color: var(--dark-blue);
+	--bg-color: var(var(--light-grey));
+
+	--bg-code: #FBF7EC;
 }
 body {
   font-family: "Fira Sans", sans-serif;
@@ -23,18 +26,25 @@ body {
 body,
 .container-fluid,
 .current-color {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+
+	background-color: var(--bg-color);
+	color: var(--text-color) !important;
+}
+.navbar-toggler-icon {
+	display: block;
+	padding: 1rem;
 }
 .contenedor {
   width: 50%;
   padding-top: 50px;
 }
-.code {
-  position: relative; /* Para posicionar el pseudoelemento */
-  padding: 15px;
-  border-radius: 10px 0 10px 10px;
-  background: #fbf7ec;
+.code{
+	display: block;
+	position: relative; /* Para posicionar el pseudoelemento */
+	background: var(--bg-code);
+	padding: 15px;
+	font-size: 90%;
+	border-radius: 10px;
 }
 
 #code-dark {
@@ -42,15 +52,22 @@ body,
 }
 
 .code::before {
-  --textContent: "Copiar";
-  content: var(--textContent);
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0.25em 0.5em;
-  font-size: 80%;
-  border: 1px solid;
-  cursor: pointer;
+
+	--textContent: 'Copiar';
+	content: var(--textContent);
+	display: grid;
+	place-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0 .8em;
+	font-size: 80%;
+	border: 1px solid;
+	cursor: pointer;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+
 }
 .code.copied::before {
   --textContent: "Copiado";
@@ -99,6 +116,15 @@ h3 {
 }
 .icon-theme:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .accordion-header > .accordion-button{
+	background-color: rgb(20, 27, 77);
+	color: var(--text-color);
+}
+.dark-mode .accordion-item {
+	background-color: rgb(21, 24, 56);
+	color: var(--text-color);
 }
 
 /* Small devices (landscape phones, less than 768px)*/
