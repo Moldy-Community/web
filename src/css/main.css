@@ -1,12 +1,12 @@
 /*google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap");
 :root {
-	--white: #fff;
-	--light-blue: #8db3e5;
-	--dark-grey: #7f8083;
-	--dark-blue: #04142c;
-	--lime-light: #6cd4c4;
-	--light-grey: #a4a4bc;
+  --white: #fff;
+  --light-blue: #8db3e5;
+  --dark-grey: #7f8083;
+  --dark-blue: #04142c;
+  --lime-light: #6cd4c4;
+  --light-grey: #a4a4bc;
 }
 .dark-mode {
 	--text-color: var(--white);
@@ -21,12 +21,13 @@
 
 	--bg-code: #FBF7EC;
 }
-body{
-	font-family: 'Fira Sans', sans-serif;
+body {
+  font-family: "Fira Sans", sans-serif;
 }
-body, 
+body,
 .container-fluid,
 .current-color {
+
 	background-color: var(--bg-color);
 	color: var(--text-color) !important;
 }
@@ -34,9 +35,9 @@ body,
 	display: block;
 	padding: 1rem;
 }
-.contenedor{
-	width: 50%;
-	padding-top:50px;
+.contenedor {
+  width: 50%;
+  padding-top: 50px;
 }
 .code{
 	display: block;
@@ -46,7 +47,13 @@ body,
 	font-size: 90%;
 	border-radius: 10px;
 }
+
+#code-dark {
+  background: #00031b;
+}
+
 .code::before {
+
 	--textContent: 'Copiar';
 	content: var(--textContent);
 	display: grid;
@@ -61,55 +68,55 @@ body,
 	cursor: pointer;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
-}
-.code.copied::before {
-	--textContent: 'Copiado';
-	color: green;
-}
-.margen{
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-footer{
-	background: #A2A7BD;
-	padding: 35px;
-	padding-bottom: 0;
 
 }
-footer a{
-	text-decoration: none;
-	color: white;
+.code.copied::before {
+  --textContent: "Copiado";
+  color: green;
 }
-.fab{
-	font-size: 2em;
-	color: lightgray;
-	padding: 5px;
+.margen {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.fab:hover{
-	color: white;
+footer {
+  background: #a2a7bd;
+  padding: 35px;
+  padding-bottom: 0;
 }
-h3{
-	text-align:center;
+footer a {
+  text-decoration: none;
+  color: white;
 }
-.imgban{
-	width: 50%;
-	height: 50%;
+.fab {
+  font-size: 2em;
+  color: lightgray;
+  padding: 5px;
+}
+.fab:hover {
+  color: white;
+}
+h3 {
+  text-align: center;
+}
+.imgban {
+  width: 50%;
+  height: 50%;
 }
 .icon-theme {
-	text-align: right;
-	position: relative;
+  text-align: right;
+  position: relative;
 }
 /* Se usa como capa superpuesta al ícono y así solo escuchar un elemento por javascript */
 .icon-theme::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .icon-theme:hover {
-	background-color: rgba(0,0,0,.05);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .dark-mode .accordion-header > .accordion-button{
@@ -122,15 +129,31 @@ h3{
 }
 
 /* Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px){
-	.contenedor{
-		width: 100%;
-	}
-	footer{
-		font-size: 0.8rem;
-	}
-	.imgban{
-		width: 100%;
-		height: 100%;
-	}
+@media (max-width: 767.98px) {
+  .contenedor {
+    width: 100%;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+  .imgban {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#nav-link {
+  color: var(--link-color);
+}
+
+#navbar-menu-default {
+  background-image: url(../img/menu/menu-default.svg);
+}
+
+#navbar-menu-darkmode {
+  background-image: url(../img/menu/menu-light.svg);
+}
+
+#navbar-toggler {
+  border: none;
 }
