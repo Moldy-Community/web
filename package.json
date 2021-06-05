@@ -17,10 +17,9 @@
   },
   "homepage": "https://github.com/Moldy-Community/web#readme",
   "devDependencies": {
-    "eslint": "^7.27.0",
-    "eslint-config-standard": "16.0.3",
-    "eslint-plugin-import": "2.23.3",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "5.1.0"
+    "standard": "16.0.3"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
