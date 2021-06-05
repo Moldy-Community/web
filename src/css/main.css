@@ -13,6 +13,7 @@
 	--bg-color: var(--dark-blue);
 
 	--bg-code: rgb(20, 27, 77);
+	--toggle-button: var(--light-blue);
 }
 .light-mode {
 	--text-color: var(--dark-blue);
