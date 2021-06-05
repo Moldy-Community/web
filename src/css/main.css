@@ -30,9 +30,11 @@ body,
 	padding-top:50px;
 }
 .code{
+	display: block;
 	position: relative; /* Para posicionar el pseudoelemento */
 	background: #FBF7EC;
 	padding: 15px;
+	font-size: 90%;
 }
 .code::before {
 	--textContent: 'Copiar';
